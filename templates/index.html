@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Encrypted Search Demo (Option1 + Option2)</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 24px auto; }
+    input, button, textarea { font-size: 1rem; padding: 8px; margin: 6px 0; width: 100%; }
+    .result { border:1px solid #ddd; padding:10px; margin:8px 0; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <h1>Encrypted Search Demo — Option 1 (Keyword) & Option 2 (Exact Name)</h1>
+  <section>
+    <h2>Search by keyword (Option 1 — Encrypted Keyword Index)</h2>
+    <input id="kw" placeholder="enter keyword (e.g., laptop, shoes, headphones)"/>
+    <button onclick="searchKeyword()">Search Keyword</button>
+    <div id="kw_results"></div>
+  </section>
+
+  <section>
+    <h2>Search by exact product name (Option 2 — Deterministic equality)</h2>
+    <input id="name" placeholder='enter exact name (e.g., "UltraFast Laptop 13" )'/>
+    <button onclick="searchName()">Search Name</button>
+    <div id="name_results"></div>
+  </section>
+
+  <section>
+    <h2>Add new product (demo)</h2>
+    <input id="add_name" placeholder="name"/>
+    <input id="add_desc" placeholder="description"/>
+    <input id="add_cat" placeholder="category"/>
+    <input id="add_price" placeholder="price (number)"/>
+    <button onclick="addProduct()">Add Product</button>
+    <div id="add_result"></div>
+  </section>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
