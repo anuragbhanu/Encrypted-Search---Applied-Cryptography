@@ -129,12 +129,3 @@ http://127.0.0.1:5000
 - Move **decryption to the client-side** using WebCrypto API.
 - Add **Dockerfile** for containerized deployment.
 
----
-
-## 👨‍💻 Author
-
-**Project:** Applied Cryptography Lab — *Encrypted Database Search for E-Commerce Systems*  
-**Language:** Python (Flask)  
-**Developed by:** [Your Name]  
-**Institution:** [Your University / College Name]  
-**Year:** 2025
