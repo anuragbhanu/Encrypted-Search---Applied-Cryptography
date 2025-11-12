@@ -4,9 +4,88 @@
   <meta charset="utf-8"/>
   <title>Encrypted Search Demo (Option1 + Option2)</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 24px auto; }
-    input, button, textarea { font-size: 1rem; padding: 8px; margin: 6px 0; width: 100%; }
-    .result { border:1px solid #ddd; padding:10px; margin:8px 0; border-radius:6px; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 900px;
+      margin: 32px auto;
+      background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+      color: #222;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px 0 rgba(60,80,120,0.10);
+    }
+    h1 {
+      text-align: center;
+      color: #2a4365;
+      margin-bottom: 32px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    section {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px 0 rgba(60,80,120,0.07);
+      padding: 24px 28px 18px 28px;
+      margin-bottom: 28px;
+      border-left: 6px solid #4f8cff;
+    }
+    h2 {
+      color: #4f8cff;
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    input, button, textarea {
+      font-size: 1rem;
+      padding: 10px 12px;
+      margin: 8px 0;
+      width: 100%;
+      border-radius: 7px;
+      border: 1px solid #cbd5e1;
+      box-sizing: border-box;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    input:focus, textarea:focus {
+      border: 1.5px solid #4f8cff;
+      outline: none;
+      box-shadow: 0 0 0 2px #b6d4ff;
+    }
+    button {
+      background: linear-gradient(90deg, #4f8cff 60%, #2a4365 100%);
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 8px 0 rgba(79,140,255,0.08);
+      transition: background 0.2s, transform 0.1s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #2a4365 60%, #4f8cff 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .result {
+      border: 1px solid #cbd5e1;
+      background: #f1f5fb;
+      padding: 14px 16px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px 0 rgba(60,80,120,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .result:hover {
+      box-shadow: 0 4px 16px 0 rgba(79,140,255,0.10);
+      border-color: #4f8cff;
+    }
+    #add_result, #kw_results, #name_results {
+      min-height: 24px;
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+      body { padding: 6px; }
+      section { padding: 12px 6px 10px 10px; }
+      h1 { font-size: 1.2rem; }
+    }
   </style>
 </head>
 <body>
